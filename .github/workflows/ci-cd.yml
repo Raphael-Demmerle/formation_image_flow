@@ -51,10 +51,10 @@ jobs:
         with:
           file: ./apps/web/Dockerfile
           push: true
-          tags: formation/image-flow-app:latest
+          tags: image-flow-app:latest
       - name: Build and push api
         uses: docker/build-push-action@v6
         with:
           file: ./apps/api/Dockerfile
           push: true
-          tags: formation/image-flow-api:latest
+          tags: image-flow-api:latest
