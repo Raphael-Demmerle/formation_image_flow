@@ -49,12 +49,12 @@ jobs:
       - name: Build and push Front
         uses: docker/build-push-action@v6
         with:
-          context: ./apps/web/Dockerfile
+          file: ./apps/web/Dockerfile
           push: true
           tags: user/app:latest
       - name: Build and push api
         uses: docker/build-push-action@v6
         with:
-          context: ./apps/api/Dockerfile
+          file: ./apps/api/Dockerfile
           push: true
           tags: user/api:latest
